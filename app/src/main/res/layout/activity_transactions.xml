@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.piro.check.activity.TransactionsActivity"
+    android:focusableInTouchMode="true">
+
+    <AutoCompleteTextView
+        android:hint="@string/select_giver"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/giverAutocomplete"
+        android:completionThreshold="1"
+        android:dropDownHeight="wrap_content"
+        android:completionHintView="@layout/completion_hint_view"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/giverAutocomplete"
+        android:id="@+id/givesText"
+        android:text="@string/givesText"
+        android:layout_alignBottom="@id/giverAutocomplete"
+        android:layout_alignParentTop="true"
+        android:gravity="center"/>
+
+    <EditText android:id="@+id/amount"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/givesText"
+        android:hint="@string/amount"
+        android:gravity="center"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/amount"
+        android:id="@+id/givesTo"
+        android:text="@string/givesTo"
+        android:layout_alignBottom="@id/giverAutocomplete"
+        android:layout_alignParentTop="true"
+        android:gravity="center"/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/receiversAutocomplete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:layout_below="@id/giverAutocomplete"
+        android:maxLines = "3"
+        android:scrollbars = "vertical"
+        android:hint="@string/receivers"
+        />
+
+    <EditText android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description"
+        android:layout_below="@id/receiversAutocomplete"/>
+
+    <Button
+        android:id="@+id/create_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_create_transaction"
+        android:layout_below="@id/description"
+        android:onClick="createTransaction" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_delete_all"
+        android:layout_below="@id/description"
+        android:layout_alignRight="@id/description"
+        android:layout_toRightOf="@id/create_transaction"
+        android:onClick="deleteAll" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/titles"
+        android:layout_below="@id/create_transaction">
+
+        <TextView
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/usernameTitle"
+            android:text="@string/giver_text"
+            />
+        <TextView
+            android:layout_marginTop="13dp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTitle"
+            android:text="@string/description_text"
+            android:layout_below="@id/create_transaction"
+            android:layout_toRightOf="@id/usernameTitle"
+            />
+
+        <TextView
+            android:layout_marginTop="13dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/amountTitle"
+            android:text="@string/dialog_amount_text"
+            android:layout_below="@id/create_transaction"
+            android:layout_toRightOf="@id/descriptionTitle"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/transactionsList"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/titles" />
+
+
+</RelativeLayout>

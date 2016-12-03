@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TransPay</string>
+    <string name="new_user">User name</string>
+    <string name="button_create">Create</string>
+    <string name="select_user">Select user</string>
+    <string name="username">Username</string>
+    <string name="balance">$</string>
+    <string name="button_delete">Delete</string>
+    <string name="user_exists">Username already exists! Chose another one.</string>
+    <string name="empty_username">Username must not be empty!</string>
+    <string name="comma_in_username">Username must not contain commas!</string>
+    <string name="action_users">Users</string>
+    <string name="action_transactions">Transactions</string>
+    <string name="select_giver">Enter giver</string>
+    <string name="amount">$$</string>
+    <string name="givesText">gives</string>
+    <string name="givesTo">to:</string>
+    <string name="receivers">Enter receivers</string>
+    <string name="description">Enter description</string>
+    <string name="button_create_transaction">Create Transaction</string>
+    <string name="empty_giver">Giver must not be empty!</string>
+    <string name="empty_amount">Amount must not be empty!</string>
+    <string name="empty_receivers">Receivers must not be empty!</string>
+    <string name="empty_description">Description must not be empty!</string>
+    <string name="dialog_confirm">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="users_for_create">Following users do not exist: %1$s. \n They will be automatically created</string>
+    <string name="button_delete_all">DELETE ALL</string>
+    <string name="giver_text">Giver</string>
+    <string name="description_text">Description</string>
+    <string name="button_delete_transaction">Delete transaction</string>
+    <string name="close">Close</string>
+    <string name="dialog_amount_text">Amount</string>
+    <string name="dialog_receivers">Receivers</string>
+    <string name="dialog_description">Drscription</string>
+    <string name="dialog_date">Date</string>
+    <string name="transaction_dialog_title">Transaction details</string>
+    <string name="dialog_gave">gave</string>
+    <string name="dialog_for">for</string>
+    <string name="dialog_to">to</string>
+    <string name="dialog_at">at</string>
+
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ТрансПлащане</string>
+    <string name="new_user">Потребител</string>
+    <string name="button_create">Създай</string>
+    <string name="username">Потребител</string>
+    <string name="balance">Баланс</string>
+    <string name="button_delete">Изтрий</string>
+    <string name="user_exists">Потребителското име е заето! Моля изберете друго.</string>
+    <string name="empty_username">Потребителското име не може да е празно!</string>
+    <string name="comma_in_username">отребителското име не може да съдържа запетаи!</string>
+    <string name="action_users">Потребители</string>
+    <string name="action_transactions">Транзакции</string>
+    <string name="select_giver">Въведете платец</string>
+    <string name="amount">$$</string>
+    <string name="givesText">дава</string>
+    <string name="givesTo">на:</string>
+    <string name="receivers">Въведете получатели</string>
+    <string name="description">Въведете описание</string>
+    <string name="button_create_transaction">Създаване на транзакция</string>
+    <string name="empty_giver">Платецът не може да е празен!</string>
+    <string name="empty_amount">Сумата не може да е празна!</string>
+    <string name="empty_receivers">Получателите не може да са празни!</string>
+    <string name="empty_description">Описанието не може да е празно!</string>
+    <string name="dialog_confirm">OK</string>
+    <string name="dialog_cancel">Отказ</string>
+    <string name="users_for_create">Следните потребители не съществуват: %1$s. \n Ще бъдат автоматично създадени</string>
+    <string name="button_delete_all">Изтрий всичко</string>
+    <string name="giver_text">Платец</string>
+    <string name="description_text">Описание</string>
+    <string name="button_delete_transaction">Изтрий транзакция</string>
+    <string name="close">Затвори</string>
+    <string name="dialog_amount_text">Сума</string>
+    <string name="dialog_receivers">Получатели</string>
+    <string name="dialog_description">Описание</string>
+    <string name="dialog_date">Дата</string>
+    <string name="transaction_dialog_title">Подробности за транзакция</string>
+    <string name="dialog_gave">даде</string>
+    <string name="dialog_for">за</string>
+    <string name="dialog_to">на</string>
+    <string name="dialog_at">в</string>
+</resources>
